@@ -1,4 +1,4 @@
-# My Blog
+# AI Journey Blog
 
-Welcome...
+Welcome! This blog will cover AI and related information.
 
