@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<article class="md-post">
+  <header>
+    <h1>{{ page.meta.title }}</h1>
+    <p class="md-post-meta">
+      <time datetime="{{ page.meta.date }}">{{ page.meta.date }}</time>
+      {% if page.meta.categories %}
+        | Categories:
+        {% for category in page.meta.categories %}
+          <span class="md-category">{{ category }}</span>
+        {% endfor %}
+      {% endif %}
+    </p>
+  </header>
+
+  <section class="md-post-content">
+    {{ page.content }}
+  </section>
+
+  <footer>
+    <hr>
+    <p>{{ config.site_url }}Back to Blog</a></p>
+  </footer>
+</article>
+{% endblock %}

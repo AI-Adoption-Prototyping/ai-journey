@@ -1,0 +1,74 @@
+site_name: "NosrednaKram AI Journey"
+site_description: "Exploring AI, LLMs, and RAG – My learning journey"
+site_author: "Mark Anderson"
+repo_url: "https://github.com/AI-Adoption-Prototyping/ai-journey"
+
+theme:
+  name: "material"
+  palette:
+    - scheme: default
+      primary: "deep orange"    # Burnt orange tone
+      accent: "amber"           # Mustard-like accent
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: "amber"
+      accent: "deep orange"
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: "Roboto"
+    code: "Fira Code"
+  logo: "/assets/logo.png"
+  favicon: "/assets/favicon.ico"
+
+plugins:
+  - search
+  - mermaid2
+  - minify:
+      minify_html: false
+  - awesome-pages
+  - tags
+  - blog:
+      blog_dir: blog
+      categories: true
+      archive: true
+  - rss:
+      match_path: blog/.*
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.arithmatex  # For LaTeX math
+  - pymdownx.tasklist
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+
+extra:
+  favicon: "/assets/favicon.ico"
+  logo: "/assets/logo.png"
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/AI-Adoption-Prototyping
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/mark-anderson-17736723/
+    - icon: fontawesome/solid/brain
+      link: /
+      extra_css:
+        - styles/custom.css
+      
+
+nav:
+  - Home: index.md
+  - Blog:
+      -  blog/index.md
+  - About: about.md

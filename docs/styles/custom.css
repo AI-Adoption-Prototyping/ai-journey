@@ -1,0 +1,14 @@
+
+:root {
+    --md-primary-fg-color: #CC5500;
+    --md-accent-fg-color: #FFDB58;
+  }
+  
+  .md-header__title {
+    font-weight: bold;
+  }
+  
+  .md-nav__title {
+    color: #6A0DAD;
+  }
+  
