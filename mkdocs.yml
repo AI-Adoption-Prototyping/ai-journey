@@ -21,8 +21,8 @@ theme:
   font:
     text: "Roboto"
     code: "Fira Code"
-  logo: "/assets/logo.png"
-  favicon: "/assets/favicon.ico"
+  logo: "assets/logo.png"
+  favicon: "assets/favicon.ico"
 
 plugins:
   - search
@@ -62,7 +62,7 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/mark-anderson-17736723/
     - icon: fontawesome/solid/brain
-      link: /
+      link: https://ai-adoption-prototyping.github.io/ai-journey/
       extra_css:
         - styles/custom.css
       
